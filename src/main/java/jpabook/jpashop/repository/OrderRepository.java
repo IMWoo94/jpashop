@@ -35,8 +35,8 @@ public class OrderRepository {
                 " and m.name like : name", Order.class)
                 .setParameter("status",orderSearch.getOrderStatus())
                 .setParameter("name",orderSearch.getMemberName())
-                .setFirstResult(100) //페이징 100건
-                .setMaxResults(1000)//최대 1000건
+                //.setFirstResult(0) //페이징 100건
+                //.setMaxResults(1000)//최대 1000건
                 .getResultList();
 
     }
